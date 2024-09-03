@@ -91,7 +91,7 @@
             };
             media {
                     bindings = <
-            &trans        &trans    &trans     &trans      &trans  &trans    &trans &trans  &trans  &trans  &trans                                  &trans
+            &trans        &trans    &trans     &trans      &trans  &trans    &bt BT_CLR &trans  &trans  &trans  &trans                                  &trans
             &trans  &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans &kp K_PREVIOUS  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_NEXT  &trans
             &trans        &trans    &trans     &trans      &trans  &trans    &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3             &trans
                                          &trans &kp ESC &kp RET &kp TAB   &kp C_STOP &kp C_PLAY_PAUSE &kp C_MUTE &trans 
