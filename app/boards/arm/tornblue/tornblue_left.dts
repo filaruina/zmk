@@ -5,6 +5,7 @@
  */
 
 #include "tornblue.dtsi"
+#include "tornblue-pinctrl.dtsi"
 
 &kscan0 {
     row-gpios
@@ -49,13 +50,11 @@
 };
 
 &spi0 {
-	compatible = "nordic,nrf-spim";
-	// Cannot be used together with i2c0
-	status = "okay";
-	mosi-pin = <23>;
-    // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <6>;
-	miso-pin = <8>;
+    compatible = "nordic,nrf-spim";
+
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-names = "default";
+    status = "okay";
 
 	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";

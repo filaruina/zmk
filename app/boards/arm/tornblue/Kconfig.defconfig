@@ -17,6 +17,9 @@ endif
 
 if BOARD_TORNBLUE_LEFT || BOARD_TORNBLUE_RIGHT
 
+config BOARD
+    default "tornblue"
+
 config ZMK_SPLIT
     default y
 
