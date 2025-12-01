@@ -78,3 +78,7 @@
 &right_encoder {
     status = "okay";
 };
+
+&usbd {
+    status = "disabled";
+};
